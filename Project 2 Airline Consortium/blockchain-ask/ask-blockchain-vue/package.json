@@ -1,0 +1,71 @@
+{
+  "name": "ask-blockchain-vue",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test": "npm run unit && npm run e2e",
+    "e2e": "node test/e2e/runner.js",
+    "lint": "vue-cli-service lint",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "start": "node ./bin/www",
+    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.4",
+    "body-parser": "^1.19.0",
+    "bootstrap-vue": "^2.0.0-rc.19",
+    "consolidate": "^0.15.1",
+    "core-js": "^2.6.5",
+    "cors": "^2.8.5",
+    "css-loader": "^2.1.1",
+    "express": "^4.16.4",
+    "mongodb": "^3.2.3",
+    "mongoose": "^5.5.5",
+    "morgan": "^1.9.1",
+    "mustache": "^3.0.1",
+    "pug": "^2.0.3",
+    "rtl-bootstrap": "0.0.5",
+    "serve-favicon": "^2.5.0",
+    "v-datatable-light": "^0.5.0",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.0",
+    "vue-router": "^3.0.3",
+    "vue-style-loader": "^4.1.2",
+    "web3": "^1.0.0-beta.53"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
